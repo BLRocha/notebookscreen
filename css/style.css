@@ -1,0 +1,16 @@
+body, ul, li, a, h1, h2, h3, h4, img,
+section, aside{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a, a:active, a:visited, :hover {
+    color: #fff;
+}
