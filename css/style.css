@@ -14,3 +14,103 @@ img {
 a, a:active, a:visited, :hover {
     color: #fff;
 }
+
+body {
+    --color-p: #1d1e22;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    width: 90%;
+    height: 900px;
+    max-height: 900px;
+    margin: 0 auto;
+  }
+  
+  #tela {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #e9e9e9;
+    box-shadow: 0 0 0 rgba(255, 255, 255, 0.5);
+    border-radius: 15px 15px 0 0;
+    background-color: #1d1e22f0;
+    padding: 40px;
+  }
+  
+  #tela:before {
+    position: relative;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: #000000ba;
+    border-radius: 15px 15px 0 0;
+  }
+  
+  #tela:after {
+    position: absolute;
+    content: '*';
+    width: 20px;
+    height: 20px;
+    background: #000000cf;
+    border-radius: 50%;
+    text-shadow: 0 0 3px red;
+    top: 10px;
+    left: 50%;
+    text-align: center;
+    line-height: 25px;
+    color: #ffffff48;
+    filter: blur(.6px);
+    border: 1px solid #fff;
+    transform: rotate(180deg);
+  }
+  
+  .screen {
+    width: 100%;
+    height: 100%;
+    background: url(https://i0.wp.com/www.toppapeldeparede.com.br/wp-content/uploads/2021/04/50-Minimalist-Desktop-Wallpapers-and.png?w=640&ssl=1) no-repeat;
+    box-shadow:  0 0 4px 1px #000;
+    background-size: cover;
+  }
+  
+  .schedule {
+    width: 100%;
+    height: 40px;
+    position: relative;
+    background: linear-gradient(0.25turn, #3f87a6, /*#ebf8e1/*,*/ #f69d3c);
+    bottom: 40px;
+    z-index: 1;
+    box-shadow:  0px -1px 3px -1px #3f87a6, 0px -1px 3px -1px #f69d3c;
+    display: flex;
+    flex-direction: flex-start;
+  }
+  
+  .button {
+    width: 30px;
+    height: 30px;
+    background: url('https://cdn-icons-png.flaticon.com/512/17/17704.png') no-repeat;
+    background-size: cover;
+    margin: 4px 0 0 10px;
+    border: none;
+  }
+  
+  .sep:before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 35px;
+    background: transparent;
+    box-shadow: 0 0 2px 1px #000000a0;
+    left: 45px;
+    bottom: 2px;
+    margin: 0 10px 0 10px;
+    pointer-events: none;
+  }
+  
+  .button:active {
+    filter: blur(.7px);
+    border: 1px solid #ccc;
+    padding: 2px;
+  }
